@@ -1,15 +1,14 @@
 import React from 'react';
-import { AppBar, Tab, Tabs, Toolbar } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Toolbar } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <AppBar color="primary">
       <Toolbar>
         <Tabs textColor="inherit">
-          <Tab label="Home" />
-          <Tab label="About" />
-          <Tab label="Table" />
-          <Tab label="Table2" />
+          <Tab label="Home" component={Link} to="/home" />
+          <Tab label="About" component={Link} to="/about" />
         </Tabs>
       </Toolbar>
     </AppBar>
