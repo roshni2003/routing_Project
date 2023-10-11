@@ -5,7 +5,7 @@ const Home = () => {
       <Grid item lg={12} style={{ height: "670px", marginTop: "40px", marginLeft: "75px", marginRight: "75px" }} >
         <Grid style={{ display: "flex" }}>
           <Grid item lg={12} style={{ height: "330px", width: "394.66px", backgroundColor: "#f2f1f0" }}>
-            <Grid item lg={12} style={{ height: "100px", width: "100px" }}><img src="myntra_logo.webp" style={{ height: "100px", width: "100px" }}></img></Grid>
+            <Grid item lg={12} style={{ height: "100px", width: "100px" }}><img src="myntralogo.png" style={{width: "100px" }}></img></Grid>
               <Grid item lg={12} style={{ height: "48px" }}><h1>Why Myntra ?</h1></Grid>
               <Grid item lg={12} style={{ height: "100px" }}><p>Myntra aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal.</p></Grid>
           </Grid>
