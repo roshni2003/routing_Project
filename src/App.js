@@ -1,20 +1,29 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Header';
-import Home from './Home';
-import About from './About'; 
+import React from "react";
+import Header from "./Header";
+import Home from "./Homes/Home";
+import About from './Abouts/About';
+import Table from "./Table";
+import Table2 from "./Table2";
+import { Routes, Route} from "react-router-dom";
+
+
+
+
 function App() {
   return (
-    <Router>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
-    </Router>
+    <div>
+      <h2> Wel-come to my app </h2>
+      <Header/>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />}/>
+        <Route path="/Table" element={<Table />}/>
+        <Route path="/Table2" element={<Table2 />}/>
+      </Routes>
+    </div>
+    
   );
 }
 
 export default App;
+
